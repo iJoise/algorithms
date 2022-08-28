@@ -1,3 +1,6 @@
+// Бинарный поиск
+let count = 0;
+
 const binarySearch = (list, item) => {
   let low = 0;
   let hight = list.length - 1;
@@ -12,10 +15,13 @@ const binarySearch = (list, item) => {
     } else {
       low = mid + 1;
     }
+    count += 1;
   }
   return null;
 };
 
-const arr = [1, 2, 3, 5, 9];
-console.log(binarySearch(arr, 1));
-console.log(binarySearch(arr, -1));
+const arr = [1, 2, 3, 5, 9, 12, 15, 18, 23, 27, 28, 33, 42, 49];
+console.log(binarySearch(arr, 33));
+
+console.log("Длинна массива: ", arr.length);
+console.log("Колличество операций: ", count);
