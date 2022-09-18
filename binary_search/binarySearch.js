@@ -3,15 +3,15 @@ let count = 0;
 
 const binarySearch = (list, item) => {
   let low = 0;
-  let hight = list.length - 1;
+  let height = list.length - 1;
 
-  while (low <= hight) {
-    let mid = Math.floor((low + hight) / 2);
+  while (low <= height) {
+    let mid = Math.floor((low + height) / 2);
     let guess = list[mid];
     if (guess === item) {
       return mid;
     } else if (guess > item) {
-      hight = mid - 1;
+      height = mid - 1;
     } else {
       low = mid + 1;
     }
