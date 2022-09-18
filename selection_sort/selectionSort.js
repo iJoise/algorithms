@@ -23,7 +23,7 @@ const selectionSort = (arr) => {
 
   return newArr;
 };
-const arr = [0, 3, 2, 5, 6, 8, 1, 9, 4, 2, 1, 2, 9, 6, 23, 6, 2, 35, 6, 3, 32];
+const arr = [0, 3, 2, 5, 6, 88, 90, -2, -5, 8, 1, 9, 4, 2, 1, 2, 9, 6, 23, 6, 2, 35, 6, 3, 32];
 const length = arr.length;
 
 console.log(selectionSort(arr));
