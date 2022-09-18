@@ -5,6 +5,7 @@ const findSmallest = (arr) => {
   let smallest = arr[0];
   let smallest_intex = 0;
   for (let i = 0; i < arr.length; i++) {
+    count += 1;
     if (arr[i] < smallest) {
       smallest = arr[i];
       smallest_intex = i;
@@ -18,7 +19,6 @@ const selectionSort = (arr) => {
   const newArr = [];
   while (arr.length) {
     newArr.push(...arr.splice(findSmallest(arr), 1));
-    count += 1;
   }
 
   return newArr;
@@ -28,4 +28,4 @@ const length = arr.length;
 
 console.log(selectionSort(arr));
 console.log("Длинна массива: ", length);
-console.log("Колличество операций: ", count);
+console.log("Количество операций: ", count); //O(n*n)

@@ -24,4 +24,4 @@ const arr = [1, 2, 3, 5, 9, 12, 15, 18, 23, 27, 28, 33, 42, 49];
 console.log(binarySearch(arr, 33));
 
 console.log("Длинна массива: ", arr.length);
-console.log("Колличество операций: ", count);
+console.log("Количество операций: ", count);
